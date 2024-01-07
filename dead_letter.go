@@ -1,9 +1,9 @@
 package RedMQ
 
 import (
-	"RedMQ/log"
-	"RedMQ/redis"
 	"context"
+	"github.com/pule1234/RedMQ/log"
+	"github.com/pule1234/RedMQ/redis"
 )
 
 // 死信队列， 当消息处理失败达到指定次数时，会被投递到此处

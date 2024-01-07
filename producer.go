@@ -1,8 +1,8 @@
 package RedMQ
 
 import (
-	"RedMQ/redis"
 	"context"
+	"github.com/pule1234/RedMQ/redis"
 )
 
 type Producer struct {

@@ -1,9 +1,9 @@
 package example
 
 import (
-	"RedMQ"
-	"RedMQ/redis"
 	"context"
+	"github.com/pule1234/RedMQ"
+	"github.com/pule1234/RedMQ/redis"
 	"testing"
 )
 

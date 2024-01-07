@@ -1,9 +1,9 @@
 package example
 
 import (
-	"RedMQ"
-	"RedMQ/redis"
 	"context"
+	"github.com/pule1234/RedMQ"
+	"github.com/pule1234/RedMQ/redis"
 	"testing"
 	"time"
 )
@@ -56,7 +56,7 @@ func Test_Consumer(t *testing.T) {
 		// 每轮接收消息的阻塞等待超时时间为2s
 		RedMQ.WithReceiveTimeout(2*time.Second),
 		// 注入自定义实现的死信队列
-		RedMQ.WithDeadLetterMailbox(demoDeadLetterMailbox), )
+		RedMQ.WithDeadLetterMailbox(demoDeadLetterMailbox))
 
 	if err != nil {
 		t.Error(err)

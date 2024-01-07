@@ -1,4 +1,4 @@
-module RedMQ
+module github.com/pule1234/RedMQ
 
 go 1.19
 

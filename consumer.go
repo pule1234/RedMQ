@@ -1,10 +1,10 @@
 package RedMQ
 
 import (
-	"RedMQ/log"
-	"RedMQ/redis"
 	"context"
 	"errors"
+	"github.com/pule1234/RedMQ/log"
+	"github.com/pule1234/RedMQ/redis"
 )
 
 // 接收到消息后执行的回调函数
@@ -28,10 +28,8 @@ type Consumer struct {
 	groupID string
 	// 当前节点的消费者id
 	consumerID string
-
 	// 各消息累计失败次数
 	failureCnts map[redis.MsgEntity]int
-
 	//一些用户自定义的配置
 	opts *ConsumerOptions
 }
